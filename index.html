@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heo Serim | SCM & Global Logistics</title>
 
+<!-- Pretendard -->
 <link rel="stylesheet" as="style" crossorigin
 href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
@@ -15,7 +16,7 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 
 <header class="navbar">
   <div class="nav-inner">
-    <div class="logo">SERIM</div>
+    <div class="logo">Heo Serim</div>
     <nav>
       <a href="#home">홈</a>
       <a href="#about">소개</a>
@@ -31,90 +32,110 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 <main>
 
 <!-- HERO -->
-<!-- HOME -->
 <section id="home" class="hero">
   <img src="images/profile.jpg" class="profile">
-
-  <h1 class="name-ko">허세림</h1>
-  <p class="name-en">Heo Serim</p>
-
-  <h2 class="hero-title">
-    현장을 이해하고, 흐름을 설계하는<br>
-    SCM·글로벌 물류 기획자
-  </h2>
+  <h1>허세림</h1>
+  <p class="en">Heo Serim</p>
+  <h2>현장을 이해하고, 흐름을 설계하는 SCM·글로벌 물류 기획자</h2>
 
   <div class="cta">
-    <a href="assets/pdf/portfolio.pdf" target="_blank" class="btn">
-      PDF 포트폴리오
-    </a>
-    <a href="#projects" class="btn ghost">
-      프로젝트 보기
-    </a>
+    <a href="assets/pdf/portfolio.pdf" class="btn primary">PDF 포트폴리오</a>
+    <a href="#projects" class="btn outline">프로젝트 보기</a>
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+  <h3>소개</h3>
+  <div class="card">
+    물류시스템공학을 전공하며 SCM 기획과 글로벌 물류를 중심으로  
+    데이터 기반 분석과 구조적 문제 해결 경험을 쌓아왔습니다.
+  </div>
+</section>
 
 <!-- ACADEMICS -->
-<section id="academics" class="section">
-  <h2>학업 · 전공</h2>
+<section id="academics">
+  <h3>학업 · 전공</h3>
 
-  <div class="card-grid">
-    <div class="card highlight">
-      <h3>주전공</h3>
-      <strong>물류시스템공학과</strong>
-      <p>전공 GPA 3.99</p>
-      <p>이수학점 132</p>
+  <div class="major-grid">
+    <div class="major-card main">
+      <span class="badge">주전공</span>
+      <h4>물류시스템공학과</h4>
+      <div class="stats">
+        <div><strong>3.99</strong><span>전공 GPA</span></div>
+        <div><strong>132</strong><span>이수학점</span></div>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>부전공</h3>
-      <strong>스마트국제물류학과</strong>
-      <p>GPA 3.71</p>
+    <div class="major-card sub">
+      <span class="badge light">부전공</span>
+      <h4>스마트국제물류학과</h4>
+      <div class="stats">
+        <div><strong>3.71</strong><span>GPA</span></div>
+        <div><strong>—</strong><span>이수학점</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECT -->
-<section id="projects" class="section">
-  <h2>프로젝트</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <h3>대표 프로젝트</h3>
 
-  <div class="project-card">
-    <h3>📦 SCM 수요 예측 프로젝트</h3>
-    <p>데이터 기반 물류 흐름 개선</p>
-    <span class="tag">#SCM</span>
-    <span class="tag">#Data</span>
+  <div class="project-grid">
+    <div class="project-card featured">
+      <span class="pin">⭐ 핵심</span>
+      <h4>SCM 수요 예측 프로젝트</h4>
+      <p>데이터 기반 수요 예측을 통한 물류 흐름 개선</p>
+      <div class="tags">
+        <span>#SCM</span><span>#Data</span>
+      </div>
+    </div>
+
+    <div class="project-card featured">
+      <span class="pin">⭐ 핵심</span>
+      <h4>글로벌 물류 네트워크 분석</h4>
+      <p>운송 리드타임 및 비용 구조 분석</p>
+      <div class="tags">
+        <span>#Global</span><span>#SCM</span>
+      </div>
+    </div>
+
+    <div class="project-card featured">
+      <span class="pin">⭐ 핵심</span>
+      <h4>재고 최적화 시뮬레이션</h4>
+      <p>재고 회전율 개선 시나리오 도출</p>
+      <div class="tags">
+        <span>#Data</span><span>#SCM</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CERT -->
-<section id="cert" class="section">
-  <h2>자격 · 어학</h2>
-
-  <div class="card-grid">
-    <div class="card center">물류관리사</div>
-    <div class="card center">유통관리사</div>
-    <div class="card center">국제무역사</div>
-  </div>
-
-  <div class="card-grid small">
-    <div class="card center">TOEIC 825</div>
-    <div class="card center">TOEIC Speaking IH</div>
+<section id="cert">
+  <h3>자격 · 어학</h3>
+  <div class="cert-grid">
+    <div class="cert-card">물류관리사</div>
+    <div class="cert-card">유통관리사</div>
+    <div class="cert-card">국제무역사</div>
+    <div class="cert-card score">TOEIC<br><strong>825</strong></div>
+    <div class="cert-card score">TOEIC Speaking<br><strong>IH</strong></div>
   </div>
 </section>
 
 <!-- ACTIVITIES -->
-<section id="activities" class="section">
-  <h2>활동 · 봉사</h2>
-
+<section id="activities">
+  <h3>활동 · 봉사</h3>
   <div class="card">
-    <strong>성균관대학교 공식 홍보대사</strong>
-    <p>2023–2024 · 대외 커뮤니케이션 및 콘텐츠 제작</p>
+    <strong>성균관대학교 공식 홍보대사</strong><br>
+    2023–2024 · 대외 커뮤니케이션 및 콘텐츠 제작
   </div>
 </section>
 
 <!-- GOAL -->
-<section id="goal" class="section">
-  <h2>진로 목표</h2>
+<section id="goal">
+  <h3>진로 목표</h3>
   <div class="card">
     물류로 세상을 연결하는 기획자가 되겠습니다.
   </div>
@@ -122,9 +143,7 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 
 </main>
 
-<footer>
-  © Heo Serim Portfolio
-</footer>
+<footer>© Heo Serim Portfolio</footer>
 
 </body>
 </html>
