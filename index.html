@@ -4,8 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heo Serim | SCM & Global Logistics</title>
+
+<!-- Pretendard -->
+<link rel="stylesheet" as="style" crossorigin
+href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="navbar">
@@ -27,79 +33,179 @@
 
 <main>
 
+<!-- HOME -->
 <section id="home" class="hero">
   <img src="images/profile.jpg" class="profile">
   <h1>허세림</h1>
   <p class="en">Heo Serim</p>
   <h2>현장을 이해하고, 흐름을 설계하는 SCM·글로벌 물류 기획자</h2>
+
   <div class="cta">
     <a href="assets/pdf/portfolio.pdf" target="_blank" class="btn">PDF 포트폴리오</a>
     <a href="#projects" class="btn ghost">프로젝트 보기</a>
   </div>
 </section>
 
-<section id="about">
-<h3>소개</h3>
-<p>물류시스템공학을 전공하며 SCM 기획과 글로벌 물류 분야를 중심으로 학업과 프로젝트를 수행해왔습니다.</p>
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <h3>소개</h3>
+  <div class="card">
+    <p>
+      물류시스템공학을 전공하며 SCM 기획과 글로벌 물류를 중심으로
+      데이터 기반 분석과 구조적 문제 해결 경험을 쌓아왔습니다.
+    </p>
+  </div>
 </section>
 
-<section id="academics">
-<h3>학업 · 전공</h3>
-<ul>
-<li>주전공: 물류시스템공학과</li>
-<li>부전공: 스마트국제물류학과 (공유대학)</li>
-<li>전체 GPA: 3.71 / 4.5</li>
-<li>전공 GPA: 3.99 / 4.5</li>
-<li>이수 학점: 132학점</li>
-</ul>
+<!-- ACADEMICS -->
+<section id="academics" class="fade-in">
+  <h3>학업 · 전공</h3>
+
+  <div class="card-grid">
+    <div class="card"><strong>주전공</strong><p>물류시스템공학과</p></div>
+    <div class="card"><strong>부전공</strong><p>스마트국제물류학과</p></div>
+    <div class="card"><strong>GPA</strong><p>3.71 / 전공 3.99</p></div>
+    <div class="card"><strong>이수 학점</strong><p>132학점</p></div>
+  </div>
 </section>
 
-<section id="experience">
-<h3>직무 경험</h3>
-<p>물류·SCM 관점에서 문제를 정의하고 구조적으로 해결하는 경험을 쌓아왔습니다.</p>
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-in">
+  <h3>직무 경험</h3>
+  <div class="card">
+    <p>
+      물류·SCM 관점에서 문제를 정의하고, 데이터와 프로세스를 통해
+      개선 방향을 기획하는 경험을 수행했습니다.
+    </p>
+  </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
-<h3>프로젝트</h3>
-<div class="frame-grid">
-  <div class="frame"></div>
-  <div class="frame"></div>
-</div>
+  <h3>프로젝트</h3>
+
+  <div class="project-grid">
+    <div class="project-card fade-in"
+      onclick="openModal(
+        'SCM 수요 예측 프로젝트',
+        '데이터 기반 수요 예측을 통해 물류 흐름 개선',
+        '데이터 분석 및 SCM 기획',
+        ['출고 데이터 분석', '수요 예측 모델 설계', '개선안 도출'],
+        '재고 회전율 개선 시뮬레이션'
+      )">
+      <img src="images/project1.jpg">
+      <div class="project-content">
+        <strong>SCM 수요 예측 프로젝트</strong>
+        <p>데이터 기반 물류 흐름 개선</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="cert">
-<h3>자격 · 어학</h3>
-<ul>
-<li>TOEIC 825</li>
-<li>TOEIC Speaking IH (150)</li>
-<li>물류관리사 · 유통관리사 · 국제무역사</li>
-</ul>
+<!-- CERT -->
+<section id="cert" class="fade-in">
+  <h3>자격 · 어학</h3>
+
+  <div class="cert-grid">
+    <div class="cert-card">TOEIC <span>825</span></div>
+    <div class="cert-card">TOEIC Speaking <span>IH</span></div>
+    <div class="cert-card">물류관리사 <span>취득</span></div>
+    <div class="cert-card">유통관리사 <span>취득</span></div>
+    <div class="cert-card">국제무역사 <span>취득</span></div>
+  </div>
 </section>
 
-<section id="awards">
-<h3>수상 · 성과</h3>
-<p>학업 및 프로젝트 수행 과정에서 성과를 인정받았습니다.</p>
+<!-- AWARDS -->
+<section id="awards" class="fade-in">
+  <h3>수상 · 성과</h3>
+  <div class="card">
+    <p>학업 및 프로젝트 수행 과정에서 성과를 인정받았습니다.</p>
+  </div>
 </section>
 
-<section id="activities">
-<h3>활동 · 봉사</h3>
-<div class="frame-grid">
-  <div class="frame"></div>
-  <div class="frame"></div>
-  <div class="frame"></div>
-</div>
+<!-- ACTIVITIES -->
+<section id="activities" class="fade-in">
+  <h3>활동 · 봉사</h3>
+
+  <div class="activity-list">
+    <div class="activity-card">
+      <span class="period">2023–2024</span>
+      <div>
+        <strong>성균관대학교 공식 홍보대사</strong>
+        <p>대외 커뮤니케이션 및 콘텐츠 제작</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="goal">
-<h3>진로 목표</h3>
-<p>물류로 세상을 연결하는 기획자가 되겠습니다.</p>
+<!-- GOAL -->
+<section id="goal" class="fade-in">
+  <h3>진로 목표</h3>
+  <div class="card">
+    <p>물류로 세상을 연결하는 기획자가 되겠습니다.</p>
+  </div>
 </section>
 
 </main>
 
 <footer>
-<p>© Heo Serim Portfolio</p>
+  © Heo Serim Portfolio
 </footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <p><strong>역할</strong> · <span id="modalRole"></span></p>
+    <ul id="modalTasks"></ul>
+    <p><strong>성과</strong> · <span id="modalResult"></span></p>
+  </div>
+</div>
+
+<script>
+/* Modal */
+function openModal(t,d,r,tasks,res){
+  modalTitle.innerText=t;
+  modalDesc.innerText=d;
+  modalRole.innerText=r;
+  modalResult.innerText=res;
+  modalTasks.innerHTML='';
+  tasks.forEach(x=>{
+    let li=document.createElement('li');
+    li.innerText=x;
+    modalTasks.appendChild(li);
+  });
+  projectModal.style.display='flex';
+}
+function closeModal(){ projectModal.style.display='none'; }
+
+/* Fade-in */
+const observer=new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(x.isIntersecting){
+      x.target.classList.add('show');
+      observer.unobserve(x.target);
+    }
+  });
+},{threshold:.2});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+/* Nav active */
+const sections=document.querySelectorAll('section');
+const links=document.querySelectorAll('nav a');
+const navObserver=new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(x.isIntersecting){
+      links.forEach(l=>{
+        l.classList.toggle('active', l.getAttribute('href')==='#'+x.target.id);
+      });
+    }
+  });
+},{threshold:.6});
+sections.forEach(s=>navObserver.observe(s));
+</script>
 
 </body>
 </html>
