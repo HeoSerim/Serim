@@ -1,179 +1,244 @@
-body{
-  margin:0;
-  font-family:'Pretendard',sans-serif;
-  background:#f8fafc;
-  color:#222;
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heo Serim | SCM & Global Logistics</title>
+
+<!-- Pretendard -->
+<link rel="stylesheet" as="style" crossorigin
+href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Heo Serim</div>
+    <nav>
+      <a href="#home">홈</a>
+      <a href="#about">소개</a>
+      <a href="#academics">학업·전공</a>
+      <a href="#experience">직무 경험</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#cert">자격·어학</a>
+      <a href="#awards">수상·성과</a>
+      <a href="#activities">활동·봉사</a>
+      <a href="#goal">진로 목표</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <img src="images/profile.jpg" class="profile">
+  <h1>허세림</h1>
+  <p class="en">Heo Serim</p>
+  <h2>현장을 이해하고, 흐름을 설계하는 SCM·글로벌 물류 기획자</h2>
+
+  <div class="cta">
+    <a href="assets/pdf/portfolio.pdf" target="_blank" class="btn">PDF 포트폴리오</a>
+    <a href="#projects" class="btn ghost">프로젝트 보기</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <h3>소개</h3>
+  <div class="card">
+    <p>
+      물류시스템공학을 전공하며 SCM 기획과 글로벌 물류를 중심으로
+      데이터 기반 분석과 구조적 문제 해결 경험을 쌓아왔습니다.
+    </p>
+  </div>
+</section>
+
+<!-- ACADEMICS -->
+<section id="academics" class="fade-in">
+  <h3>학업 · 전공</h3>
+
+  <div class="major-grid">
+    <div class="major-card primary">
+      <span class="tag">주전공</span>
+      <h4>물류시스템공학과</h4>
+      <div class="major-stats">
+        <div><strong>3.99</strong><span>전공 GPA</span></div>
+        <div><strong>132</strong><span>이수학점</span></div>
+      </div>
+    </div>
+
+    <div class="major-card sub">
+      <span class="tag">부전공</span>
+      <h4>스마트국제물류학과</h4>
+      <div class="major-stats">
+        <div><strong>3.71</strong><span>GPA</span></div>
+        <div><strong>—</strong><span>이수학점</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-in">
+  <h3>직무 경험</h3>
+  <div class="card">
+    <p>
+      물류·SCM 관점에서 문제를 정의하고,
+      데이터를 기반으로 개선안을 기획한 경험을 보유하고 있습니다.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h3>프로젝트</h3>
+
+  <div class="filter-bar">
+    <button class="active" onclick="filterProjects('all', this)">ALL</button>
+    <button onclick="filterProjects('SCM', this)">#SCM</button>
+    <button onclick="filterProjects('Global', this)">#Global</button>
+    <button onclick="filterProjects('Data', this)">#Data</button>
+  </div>
+
+  <div class="project-grid">
+
+    <div class="project-card fade-in"
+      data-tags="SCM,Data"
+      onclick="openModal()">
+      <div class="icon">📦</div>
+      <h4>SCM 수요 예측 프로젝트</h4>
+      <p>데이터 기반 물류 흐름 개선</p>
+      <div class="tags">
+        <span>#SCM</span><span>#Data</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERT -->
+<section id="cert" class="fade-in">
+  <h3>자격 · 어학</h3>
+  <div class="cert-grid">
+    <div class="cert-card">TOEIC <span>825</span></div>
+    <div class="cert-card">TOEIC Speaking <span>IH</span></div>
+    <div class="cert-card">물류관리사 <span>취득</span></div>
+    <div class="cert-card">유통관리사 <span>취득</span></div>
+    <div class="cert-card">국제무역사 <span>취득</span></div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards" class="fade-in">
+  <h3>수상 · 성과</h3>
+  <div class="card">학업 우수 장학금 수혜</div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="fade-in">
+  <h3>활동 · 봉사</h3>
+  <div class="activity-card">
+    <span class="period">2023–2024</span>
+    <div>
+      <strong>성균관대학교 공식 홍보대사</strong>
+      <p>대외 커뮤니케이션 및 콘텐츠 제작</p>
+    </div>
+  </div>
+</section>
+
+<!-- GOAL -->
+<section id="goal" class="fade-in">
+  <h3>진로 목표</h3>
+  <div class="card">
+    물류로 세상을 연결하는 기획자가 되겠습니다.
+  </div>
+</section>
+
+</main>
+
+<footer>© Heo Serim Portfolio</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+
+    <h3>SCM 수요 예측 프로젝트</h3>
+    <p>데이터 기반 수요 예측을 통한 물류 흐름 개선</p>
+
+    <!-- Slider -->
+    <div class="slider">
+      <button class="slide-btn prev" onclick="moveSlide(-1)">‹</button>
+      <img src="images/project1-1.jpg" class="slide active">
+      <img src="images/project1-2.jpg" class="slide">
+      <button class="slide-btn next" onclick="moveSlide(1)">›</button>
+    </div>
+
+    <!-- Result badges -->
+    <div class="result-badges">
+      <div class="badge"><strong>15%</strong><span>리드타임 단축</span></div>
+      <div class="badge"><strong>+20%</strong><span>운영 효율</span></div>
+    </div>
+
+    <ul>
+      <li>출고 데이터 분석</li>
+      <li>수요 예측 모델 설계</li>
+      <li>개선안 도출</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+/* Modal */
+function openModal(){
+  document.getElementById('projectModal').style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('projectModal').style.display='none';
+  document.body.style.overflow='';
 }
 
-/* NAV */
-.navbar{
-  position:fixed;
-  top:0; width:100%;
-  background:#fff;
-  border-bottom:1px solid #e5e9f2;
-  z-index:100;
-}
-.nav-inner{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  padding:14px 20px;
-}
-nav a{
-  margin-left:18px;
-  text-decoration:none;
-  color:#333;
-  font-size:14px;
-  position:relative;
-}
-nav a::after{
-  content:'';
-  position:absolute;
-  left:0; bottom:-4px;
-  width:0; height:2px;
-  background:#3b82f6;
-  transition:.2s;
-}
-nav a:hover,
-nav a.active{ color:#3b82f6; }
-nav a:hover::after,
-nav a.active::after{ width:100%; }
-
-main{ padding-top:90px; }
-section{
-  max-width:900px;
-  margin:0 auto 120px;
-  padding:0 20px;
+/* Slider */
+let currentSlide=0;
+function moveSlide(dir){
+  const slides=document.querySelectorAll('.slide');
+  slides[currentSlide].classList.remove('active');
+  currentSlide=(currentSlide+dir+slides.length)%slides.length;
+  slides[currentSlide].classList.add('active');
 }
 
-/* HERO */
-.hero{
-  text-align:center;
-  padding:120px 20px;
-  background:linear-gradient(180deg,#f0f6ff,#fff);
-}
-.profile{
-  width:150px; height:150px;
-  border-radius:50%;
-  object-fit:cover;
-}
-.en{ color:#3b82f6; margin-top:4px; }
+/* Filter */
+function filterProjects(tag, btn){
+  document.querySelectorAll('.filter-bar button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
 
-/* BUTTON */
-.btn{
-  display:inline-block;
-  padding:10px 18px;
-  border-radius:20px;
-  background:#3b82f6;
-  color:#fff;
-  margin:8px;
-}
-.btn.ghost{
-  background:#fff;
-  border:1px solid #3b82f6;
-  color:#3b82f6;
+  document.querySelectorAll('.project-card').forEach(card=>{
+    const tags=card.dataset.tags;
+    card.style.display=(tag==='all'||tags.includes(tag))?'block':'none';
+  });
 }
 
-/* CARD */
-.card{
-  background:#fff;
-  padding:28px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-.card-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:24px;
-}
+/* Fade in */
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('show');
+      observer.unobserve(e.target);
+    }
+  });
+},{threshold:.2});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
 
-/* PROJECT */
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:28px;
-}
-.project-card{
-  background:#fff;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 12px 32px rgba(0,0,0,.1);
-  cursor:pointer;
-  transition:.25s;
-}
-.project-card:hover{ transform:translateY(-6px); }
-.project-card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-}
-.project-content{ padding:22px; }
+/* ESC */
+window.addEventListener('keydown',e=>{
+  if(e.key==='Escape') closeModal();
+});
+</script>
 
-/* CERT */
-.cert-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:20px;
-}
-.cert-card{
-  background:#fff;
-  padding:26px;
-  border-radius:16px;
-  text-align:center;
-  box-shadow:0 8px 24px rgba(0,0,0,.08);
-}
-.cert-card span{ color:#3b82f6; }
-
-/* ACTIVITY */
-.activity-list{ display:flex; flex-direction:column; gap:16px; }
-.activity-card{
-  background:#fff;
-  padding:20px 24px;
-  border-radius:16px;
-  display:flex;
-  gap:20px;
-  box-shadow:0 8px 24px rgba(0,0,0,.06);
-}
-.period{ color:#3b82f6; min-width:90px; }
-
-/* FADE */
-.fade-in{
-  opacity:0;
-  transform:translateY(40px);
-  transition:.8s;
-}
-.fade-in.show{
-  opacity:1;
-  transform:none;
-}
-
-/* MODAL */
-.modal-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.45);
-  display:none;
-  align-items:center;
-  justify-content:center;
-}
-.modal{
-  background:#fff;
-  padding:36px;
-  border-radius:20px;
-  max-width:520px;
-  width:90%;
-}
-.modal-close{
-  position:absolute;
-  right:20px; top:18px;
-  background:none;
-  border:none;
-  font-size:24px;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-  color:#777;
-}
+</body>
+</html>
