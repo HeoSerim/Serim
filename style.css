@@ -28,7 +28,10 @@ nav a{
   font-size:14px;
 }
 main{padding-top:90px;}
-section{max-width:1000px;margin:0 auto 140px;padding:0 20px;}
+section{
+  margin-bottom:120px;
+  padding:0 20px;
+}
 .offset{scroll-margin-top:100px;}
 
 /* HERO */
