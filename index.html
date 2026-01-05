@@ -61,11 +61,24 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 <section id="academics" class="fade-in">
   <h3>학업 · 전공</h3>
 
-  <div class="card-grid">
-    <div class="card"><strong>주전공</strong><p>물류시스템공학과</p></div>
-    <div class="card"><strong>부전공</strong><p>스마트국제물류학과</p></div>
-    <div class="card"><strong>GPA</strong><p>3.71 / 전공 3.99</p></div>
-    <div class="card"><strong>이수 학점</strong><p>132학점</p></div>
+  <div class="major-grid">
+    <div class="major-card primary">
+      <span class="tag">주전공</span>
+      <h4>물류시스템공학과</h4>
+      <div class="major-stats">
+        <div><strong>3.99</strong><span>전공 GPA</span></div>
+        <div><strong>132</strong><span>이수학점</span></div>
+      </div>
+    </div>
+
+    <div class="major-card sub">
+      <span class="tag">부전공</span>
+      <h4>스마트국제물류학과</h4>
+      <div class="major-stats">
+        <div><strong>3.71</strong><span>GPA</span></div>
+        <div><strong>—</strong><span>이수학점</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -74,8 +87,8 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
   <h3>직무 경험</h3>
   <div class="card">
     <p>
-      물류·SCM 관점에서 문제를 정의하고, 데이터와 프로세스를 통해
-      개선 방향을 기획하는 경험을 수행했습니다.
+      물류·SCM 관점에서 문제를 정의하고,
+      데이터를 기반으로 개선안을 기획한 경험을 보유하고 있습니다.
     </p>
   </div>
 </section>
@@ -84,28 +97,32 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 <section id="projects">
   <h3>프로젝트</h3>
 
+  <div class="filter-bar">
+    <button class="active" onclick="filterProjects('all', this)">ALL</button>
+    <button onclick="filterProjects('SCM', this)">#SCM</button>
+    <button onclick="filterProjects('Global', this)">#Global</button>
+    <button onclick="filterProjects('Data', this)">#Data</button>
+  </div>
+
   <div class="project-grid">
+
     <div class="project-card fade-in"
-      onclick="openModal(
-        'SCM 수요 예측 프로젝트',
-        '데이터 기반 수요 예측을 통해 물류 흐름 개선',
-        '데이터 분석 및 SCM 기획',
-        ['출고 데이터 분석', '수요 예측 모델 설계', '개선안 도출'],
-        '재고 회전율 개선 시뮬레이션'
-      )">
-      <img src="images/project1.jpg">
-      <div class="project-content">
-        <strong>SCM 수요 예측 프로젝트</strong>
-        <p>데이터 기반 물류 흐름 개선</p>
+      data-tags="SCM,Data"
+      onclick="openModal()">
+      <div class="icon">📦</div>
+      <h4>SCM 수요 예측 프로젝트</h4>
+      <p>데이터 기반 물류 흐름 개선</p>
+      <div class="tags">
+        <span>#SCM</span><span>#Data</span>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- CERT -->
 <section id="cert" class="fade-in">
   <h3>자격 · 어학</h3>
-
   <div class="cert-grid">
     <div class="cert-card">TOEIC <span>825</span></div>
     <div class="cert-card">TOEIC Speaking <span>IH</span></div>
@@ -118,22 +135,17 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 <!-- AWARDS -->
 <section id="awards" class="fade-in">
   <h3>수상 · 성과</h3>
-  <div class="card">
-    <p>학업 및 프로젝트 수행 과정에서 성과를 인정받았습니다.</p>
-  </div>
+  <div class="card">학업 우수 장학금 수혜</div>
 </section>
 
 <!-- ACTIVITIES -->
 <section id="activities" class="fade-in">
   <h3>활동 · 봉사</h3>
-
-  <div class="activity-list">
-    <div class="activity-card">
-      <span class="period">2023–2024</span>
-      <div>
-        <strong>성균관대학교 공식 홍보대사</strong>
-        <p>대외 커뮤니케이션 및 콘텐츠 제작</p>
-      </div>
+  <div class="activity-card">
+    <span class="period">2023–2024</span>
+    <div>
+      <strong>성균관대학교 공식 홍보대사</strong>
+      <p>대외 커뮤니케이션 및 콘텐츠 제작</p>
     </div>
   </div>
 </section>
@@ -142,69 +154,90 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 <section id="goal" class="fade-in">
   <h3>진로 목표</h3>
   <div class="card">
-    <p>물류로 세상을 연결하는 기획자가 되겠습니다.</p>
+    물류로 세상을 연결하는 기획자가 되겠습니다.
   </div>
 </section>
 
 </main>
 
-<footer>
-  © Heo Serim Portfolio
-</footer>
+<footer>© Heo Serim Portfolio</footer>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="projectModal">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">×</button>
-    <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
-    <p><strong>역할</strong> · <span id="modalRole"></span></p>
-    <ul id="modalTasks"></ul>
-    <p><strong>성과</strong> · <span id="modalResult"></span></p>
+
+    <h3>SCM 수요 예측 프로젝트</h3>
+    <p>데이터 기반 수요 예측을 통한 물류 흐름 개선</p>
+
+    <!-- Slider -->
+    <div class="slider">
+      <button class="slide-btn prev" onclick="moveSlide(-1)">‹</button>
+      <img src="images/project1-1.jpg" class="slide active">
+      <img src="images/project1-2.jpg" class="slide">
+      <button class="slide-btn next" onclick="moveSlide(1)">›</button>
+    </div>
+
+    <!-- Result badges -->
+    <div class="result-badges">
+      <div class="badge"><strong>15%</strong><span>리드타임 단축</span></div>
+      <div class="badge"><strong>+20%</strong><span>운영 효율</span></div>
+    </div>
+
+    <ul>
+      <li>출고 데이터 분석</li>
+      <li>수요 예측 모델 설계</li>
+      <li>개선안 도출</li>
+    </ul>
   </div>
 </div>
 
 <script>
 /* Modal */
-function openModal(t,d,r,tasks,res){
-  modalTitle.innerText=t;
-  modalDesc.innerText=d;
-  modalRole.innerText=r;
-  modalResult.innerText=res;
-  modalTasks.innerHTML='';
-  tasks.forEach(x=>{
-    let li=document.createElement('li');
-    li.innerText=x;
-    modalTasks.appendChild(li);
-  });
-  projectModal.style.display='flex';
+function openModal(){
+  document.getElementById('projectModal').style.display='flex';
+  document.body.style.overflow='hidden';
 }
-function closeModal(){ projectModal.style.display='none'; }
+function closeModal(){
+  document.getElementById('projectModal').style.display='none';
+  document.body.style.overflow='';
+}
 
-/* Fade-in */
-const observer=new IntersectionObserver(e=>{
-  e.forEach(x=>{
-    if(x.isIntersecting){
-      x.target.classList.add('show');
-      observer.unobserve(x.target);
+/* Slider */
+let currentSlide=0;
+function moveSlide(dir){
+  const slides=document.querySelectorAll('.slide');
+  slides[currentSlide].classList.remove('active');
+  currentSlide=(currentSlide+dir+slides.length)%slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+/* Filter */
+function filterProjects(tag, btn){
+  document.querySelectorAll('.filter-bar button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+
+  document.querySelectorAll('.project-card').forEach(card=>{
+    const tags=card.dataset.tags;
+    card.style.display=(tag==='all'||tags.includes(tag))?'block':'none';
+  });
+}
+
+/* Fade in */
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('show');
+      observer.unobserve(e.target);
     }
   });
 },{threshold:.2});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
 
-/* Nav active */
-const sections=document.querySelectorAll('section');
-const links=document.querySelectorAll('nav a');
-const navObserver=new IntersectionObserver(e=>{
-  e.forEach(x=>{
-    if(x.isIntersecting){
-      links.forEach(l=>{
-        l.classList.toggle('active', l.getAttribute('href')==='#'+x.target.id);
-      });
-    }
-  });
-},{threshold:.6});
-sections.forEach(s=>navObserver.observe(s));
+/* ESC */
+window.addEventListener('keydown',e=>{
+  if(e.key==='Escape') closeModal();
+});
 </script>
 
 </body>
