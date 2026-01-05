@@ -224,3 +224,65 @@ section{
 .fade-in.show{opacity:1;transform:none;}
 
 footer{text-align:center;padding:40px;color:#777;}
+
+.hero{
+  background:#eaf4ff;
+  padding:120px 0;
+}
+
+.hero-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 40px;
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  align-items:center;
+  gap:80px;
+}
+
+.hero-text h1{
+  font-size:48px;
+  line-height:1.2;
+}
+
+.eyebrow{
+  color:#3b82f6;
+  font-size:14px;
+  margin-bottom:12px;
+}
+
+.desc{
+  margin:20px 0;
+  color:#555;
+}
+
+.name{
+  font-weight:600;
+}
+.name span{
+  color:#777;
+  font-size:14px;
+  margin-left:6px;
+}
+
+.hero-stats{
+  display:flex;
+  gap:16px;
+  margin:24px 0;
+}
+.stat{
+  background:#3b82f6;
+  color:white;
+  padding:14px 18px;
+  border-radius:14px;
+  text-align:center;
+  font-weight:600;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:28px;
+  background:white;
+  padding:12px;
+}
+
