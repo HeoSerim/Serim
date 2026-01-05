@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heo Serim | SCM & Global Logistics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heo Serim | SCM & Global Logistics</title>
 
-<!-- Pretendard -->
-<link rel="stylesheet" as="style" crossorigin
-href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <!-- Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+<!-- NAV -->
 <header class="navbar">
   <div class="nav-inner">
     <div class="logo">SERIM</div>
@@ -21,11 +22,8 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
       <a href="#home">홈</a>
       <a href="#about">소개</a>
       <a href="#academics">학업·전공</a>
-      <a href="#experience">직무 경험</a>
       <a href="#projects">프로젝트</a>
       <a href="#cert">자격·어학</a>
-      <a href="#awards">수상·성과</a>
-      <a href="#activities">활동·봉사</a>
       <a href="#goal">진로 목표</a>
     </nav>
   </div>
@@ -33,7 +31,7 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
 
 <main>
 
-<!-- HOME -->
+<!-- HERO -->
 <section id="home" class="hero">
   <div class="hero-inner">
 
@@ -51,8 +49,14 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
       </p>
 
       <div class="hero-stats">
-        <div class="stat">3.99<br><span>전공 GPA</span></div>
-        <div class="stat">132<br><span>이수학점</span></div>
+        <div class="stat">
+          3.99
+          <span>전공 GPA</span>
+        </div>
+        <div class="stat">
+          132
+          <span>이수학점</span>
+        </div>
       </div>
 
       <div class="cta">
@@ -62,227 +66,59 @@ href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretend
     </div>
 
     <div class="hero-image">
-      <img src="images/profile.jpg">
+      <img src="images/profile.jpg" alt="profile" />
     </div>
 
   </div>
 </section>
 
-
-
-
 <!-- ABOUT -->
-<section id="about" class="fade-in offset">
-  <h3>소개</h3>
-  <div class="card">
-    SCM 기획과 글로벌 물류를 중심으로<br>
-    데이터를 기반으로 문제를 정의하고 구조적으로 해결하는 과정을
-    학업과 프로젝트를 통해 경험했습니다.
-  </div>
+<section id="about" class="section">
+  <h2>소개</h2>
+  <p>
+    물류시스템공학을 전공하며 SCM 기획과 글로벌 물류를 중심으로
+    데이터 기반 문제 해결 역량을 쌓아왔습니다.
+  </p>
 </section>
 
 <!-- ACADEMICS -->
-<section id="academics" class="fade-in offset">
-  <h3>학업 · 전공</h3>
-
-  <div class="major-grid">
-    <div class="major-card primary">
-      <span class="tag">주전공</span>
-      <h4>물류시스템공학과</h4>
-      <div class="major-stats">
-        <div><strong>3.99</strong><span>전공 GPA</span></div>
-        <div><strong>132</strong><span>이수학점</span></div>
-      </div>
-    </div>
-
-    <div class="major-card sub">
-      <span class="tag gray">부전공</span>
-      <h4>스마트국제물류학과</h4>
-      <div class="major-stats">
-        <div><strong>3.71</strong><span>GPA</span></div>
-        <div><strong>-</strong><span>이수학점</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="fade-in offset">
-  <h3>직무 경험</h3>
-  <div class="card">
-    물류·SCM 관점에서 문제를 정의하고<br>
-    데이터를 통해 개선안을 기획하는 경험을 수행했습니다.
-  </div>
+<section id="academics" class="section">
+  <h2>학업 · 전공</h2>
+  <ul>
+    <li>주전공 : 물류시스템공학과</li>
+    <li>부전공 : 스마트국제물류학과</li>
+  </ul>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="offset">
-  <h3>프로젝트</h3>
-
-  <div class="filter-bar">
-    <button class="active" onclick="filterProjects('all',this)">ALL</button>
-    <button onclick="filterProjects('SCM',this)">SCM</button>
-    <button onclick="filterProjects('Global',this)">Global</button>
-    <button onclick="filterProjects('Data',this)">Data</button>
-  </div>
-
-  <div class="project-grid" id="projectGrid"></div>
+<section id="projects" class="section">
+  <h2>프로젝트</h2>
+  <p>대표 프로젝트 중심으로 구성 예정</p>
 </section>
 
 <!-- CERT -->
-<section id="cert" class="fade-in offset">
-  <h3>자격 · 어학</h3>
-
-  <div class="cert-grid">
-    <div class="cert-card">물류관리사</div>
-    <div class="cert-card">유통관리사</div>
-    <div class="cert-card">국제무역사</div>
-  </div>
-
-  <div class="lang-grid">
-    <div class="lang-card">
-      <strong>TOEIC</strong>
-      <span>825</span>
-    </div>
-    <div class="lang-card">
-      <strong>TOEIC Speaking</strong>
-      <span>IH</span>
-    </div>
-  </div>
-</section>
-
-<!-- AWARDS -->
-<section id="awards" class="fade-in offset">
-  <h3>수상 · 성과</h3>
-  <div class="card">
-    학업 우수 장학금 수혜
-  </div>
-</section>
-
-<!-- ACTIVITIES -->
-<section id="activities" class="fade-in offset">
-  <h3>활동 · 봉사</h3>
-
-  <div class="activity-card">
-    <span class="period">2023–2024</span>
-    <div>
-      <strong>성균관대학교 공식 홍보대사</strong>
-      <p>대외 커뮤니케이션 및 콘텐츠 제작</p>
-    </div>
-  </div>
+<section id="cert" class="section">
+  <h2>자격 · 어학</h2>
+  <ul>
+    <li>TOEIC 825</li>
+    <li>TOEIC Speaking IH</li>
+    <li>물류관리사 / 유통관리사 / 국제무역사</li>
+  </ul>
 </section>
 
 <!-- GOAL -->
-<section id="goal" class="fade-in offset">
-  <h3>진로 목표</h3>
-  <div class="card">
+<section id="goal" class="section">
+  <h2>진로 목표</h2>
+  <p>
     물류로 세상을 연결하는 기획자가 되겠습니다.
-  </div>
+  </p>
 </section>
 
 </main>
 
-<footer>© Heo Serim Portfolio</footer>
-
-<!-- MODAL -->
-<div class="modal-overlay" id="modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">×</button>
-
-    <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
-
-    <div class="slider">
-      <button class="slide-btn prev" onclick="prevSlide()">‹</button>
-      <img id="slideImg">
-      <button class="slide-btn next" onclick="nextSlide()">›</button>
-    </div>
-
-    <div class="result-badges" id="modalResults"></div>
-  </div>
-</div>
-
-<script>
-/* ===== PROJECT DATA ===== */
-const projects = [
-  {
-    title:"SCM 수요 예측 프로젝트",
-    desc:"데이터 기반 수요 예측을 통한 물류 흐름 개선",
-    tags:["SCM","Data"],
-    core:true,
-    images:["images/project1-1.jpg","images/project1-2.jpg"],
-    results:["재고 회전율 +15%","운영 효율 +20%"]
-  },
-  {
-    title:"글로벌 물류 리드타임 분석",
-    desc:"국가별 리드타임 비교 및 병목 개선",
-    tags:["Global","SCM"],
-    core:true,
-    images:["images/project2-1.jpg"],
-    results:["리드타임 -12%"]
-  }
-];
-
-/* ===== RENDER ===== */
-const grid=document.getElementById("projectGrid");
-projects.forEach((p,i)=>{
-  const card=document.createElement("div");
-  card.className="project-card fade-in"+(p.core?" core":"");
-  card.dataset.tags=p.tags.join(",");
-  card.onclick=()=>openModal(i);
-  card.innerHTML=`
-    <div class="icon">📦</div>
-    <h4>${p.title}</h4>
-    <p>${p.desc}</p>
-    <div class="tags">${p.tags.map(t=>`<span>${t}</span>`).join("")}</div>
-  `;
-  grid.appendChild(card);
-});
-
-/* ===== FILTER ===== */
-function filterProjects(tag,btn){
-  document.querySelectorAll(".filter-bar button").forEach(b=>b.classList.remove("active"));
-  btn.classList.add("active");
-  document.querySelectorAll(".project-card").forEach(c=>{
-    c.style.display=(tag==="all"||c.dataset.tags.includes(tag))?"block":"none";
-  });
-}
-
-/* ===== MODAL & SLIDER ===== */
-let current=0,slide=0;
-function openModal(i){
-  current=i;slide=0;
-  modal.style.display="flex";
-  document.body.style.overflow="hidden";
-  modalTitle.innerText=projects[i].title;
-  modalDesc.innerText=projects[i].desc;
-  slideImg.src=projects[i].images[0];
-  modalResults.innerHTML=projects[i].results.map(r=>`<div class="badge">${r}</div>`).join("");
-}
-function closeModal(){
-  modal.style.display="none";
-  document.body.style.overflow="";
-}
-function nextSlide(){
-  slide=(slide+1)%projects[current].images.length;
-  slideImg.src=projects[current].images[slide];
-}
-function prevSlide(){
-  slide=(slide-1+projects[current].images.length)%projects[current].images.length;
-  slideImg.src=projects[current].images[slide];
-}
-
-/* ===== FADE ===== */
-const io=new IntersectionObserver(e=>{
-  e.forEach(x=>{
-    if(x.isIntersecting){
-      x.target.classList.add("show");
-      io.unobserve(x.target);
-    }
-  });
-},{threshold:.2});
-document.querySelectorAll(".fade-in").forEach(el=>io.observe(el));
-</script>
+<footer>
+  © Heo Serim
+</footer>
 
 </body>
 </html>
